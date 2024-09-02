@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgtewb3k6xny"
-path="res://.godot/imported/lpcfemalelight.png-c359f9c8181e49667de7d701201ed6c8.ctex"
+path="res://.godot/imported/lpcfemalelight.png-08c4681ff10fd92429a367b150bbf44b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/player/lpcfemalelight.png"
-dest_files=["res://.godot/imported/lpcfemalelight.png-c359f9c8181e49667de7d701201ed6c8.ctex"]
+source_file="res://Assets/Sprites/Player/lpcfemalelight.png"
+dest_files=["res://.godot/imported/lpcfemalelight.png-08c4681ff10fd92429a367b150bbf44b.ctex"]
 
 [params]
 

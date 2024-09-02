@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://bajj2g3c7uvqa"]
 
-[ext_resource type="Script" path="res://Player/player.gd" id="1_j07xd"]
-[ext_resource type="Texture2D" uid="uid://bgtewb3k6xny" path="res://resources/player/lpcfemalelight.png" id="2_ii68n"]
+[ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_j07xd"]
+[ext_resource type="Texture2D" uid="uid://bgtewb3k6xny" path="res://Assets/Sprites/Player/lpcfemalelight.png" id="2_ii68n"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rwleb"]
 animation = &"idle_left"
@@ -278,3 +278,9 @@ frame = 130
 visible = false
 position = Vector2(0, -23)
 shape = SubResource("CapsuleShape2D_4qj32")
+
+[node name="StateMachine" type="Node" parent="."]
+
+[node name="MoveState" type="Node" parent="StateMachine"]
+
+[node name="AttackNode" type="Node" parent="StateMachine"]

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2e1o4d5ugwrp"
-path="res://.godot/imported/fence_medieval.png-d759f1dc22e9f0a5ca84848793364692.ctex"
+uid="uid://b2xcehtbsyo34"
+path="res://.godot/imported/grass.png-0b58483bcf4e1d10cd3c8a7ea89cc542.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/tilesets/fence_medieval.png"
-dest_files=["res://.godot/imported/fence_medieval.png-d759f1dc22e9f0a5ca84848793364692.ctex"]
+source_file="res://Assets/Tilesets/grass.png"
+dest_files=["res://.godot/imported/grass.png-0b58483bcf4e1d10cd3c8a7ea89cc542.ctex"]
 
 [params]
 
@@ -25,7 +25,7 @@ mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false

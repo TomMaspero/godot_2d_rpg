@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://culsjun1iwhfi"
-path="res://.godot/imported/base_out_atlas.png-17d68919939c57a28f2fb547b637d00b.ctex"
+uid="uid://dacmbcjx8wd7x"
+path="res://.godot/imported/decorations-medieval.png-bc07245a2b7c6c1ec22a15e776b4b751.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/tilesets/base_out_atlas.png"
-dest_files=["res://.godot/imported/base_out_atlas.png-17d68919939c57a28f2fb547b637d00b.ctex"]
+source_file="res://Assets/Tilesets/decorations-medieval.png"
+dest_files=["res://.godot/imported/decorations-medieval.png-bc07245a2b7c6c1ec22a15e776b4b751.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2gij67edhcla"
-path="res://.godot/imported/build_atlas.png-4b2858267d284daa6ef46d77584acb6a.ctex"
+uid="uid://c2e1o4d5ugwrp"
+path="res://.godot/imported/fence_medieval.png-367c87204838afe94039802f5ee3a0b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/tilesets/build_atlas.png"
-dest_files=["res://.godot/imported/build_atlas.png-4b2858267d284daa6ef46d77584acb6a.ctex"]
+source_file="res://Assets/Tilesets/fence_medieval.png"
+dest_files=["res://.godot/imported/fence_medieval.png-367c87204838afe94039802f5ee3a0b6.ctex"]
 
 [params]
 

@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://cmi7mlln45ocw"]
 
-[ext_resource type="Texture2D" uid="uid://b2xcehtbsyo34" path="res://resources/world/grass.png" id="1_onfsp"]
-[ext_resource type="PackedScene" uid="uid://bajj2g3c7uvqa" path="res://Player/player.tscn" id="2_rrakn"]
-[ext_resource type="PackedScene" uid="uid://dljk8put6nn3j" path="res://World/tile_map_layer.tscn" id="3_n54i4"]
+[ext_resource type="Texture2D" uid="uid://b2xcehtbsyo34" path="res://Assets/Tilesets/grass.png" id="1_onfsp"]
+[ext_resource type="PackedScene" uid="uid://bajj2g3c7uvqa" path="res://Scenes/Characters/player.tscn" id="2_rrakn"]
+[ext_resource type="PackedScene" uid="uid://dljk8put6nn3j" path="res://Scenes/TileMaps/tile_map_layer.tscn" id="3_n54i4"]
 
 [node name="World" type="Node2D"]
 
