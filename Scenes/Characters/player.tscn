@@ -1,7 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://bajj2g3c7uvqa"]
+[gd_scene load_steps=32 format=3 uid="uid://bajj2g3c7uvqa"]
 
 [ext_resource type="Script" path="res://Scripts/Player/player.gd" id="1_j07xd"]
 [ext_resource type="Texture2D" uid="uid://bgtewb3k6xny" path="res://Assets/Sprites/Player/lpcfemalelight.png" id="2_ii68n"]
+[ext_resource type="Script" path="res://Scripts/States/Player/StateMachine.gd" id="3_phfhr"]
+[ext_resource type="Script" path="res://Scripts/States/Player/MoveState.gd" id="4_5wxb7"]
+[ext_resource type="Script" path="res://Scripts/States/Player/AttackState.gd" id="5_47j0h"]
+[ext_resource type="Script" path="res://Scripts/Player/AnimationHandler.gd" id="6_o2m8c"]
 
 [sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_rwleb"]
 animation = &"idle_left"
@@ -280,7 +284,13 @@ position = Vector2(0, -23)
 shape = SubResource("CapsuleShape2D_4qj32")
 
 [node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_phfhr")
 
 [node name="MoveState" type="Node" parent="StateMachine"]
+script = ExtResource("4_5wxb7")
 
 [node name="AttackNode" type="Node" parent="StateMachine"]
+script = ExtResource("5_47j0h")
+
+[node name="AnimationHandler" type="Node" parent="."]
+script = ExtResource("6_o2m8c")
