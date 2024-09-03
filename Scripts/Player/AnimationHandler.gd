@@ -17,3 +17,4 @@ func update_animation_parameters(velocity, input_vector):
 	if(input_vector != Vector2.ZERO):
 		animationTree["parameters/Idle/blend_position"] = input_vector
 		animationTree["parameters/Run/blend_position"] = input_vector
+		animationTree["parameters/Attack/blend_position"] = input_vector

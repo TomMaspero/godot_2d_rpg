@@ -19,6 +19,8 @@ func update(delta):
 		Player.velocity = Player.velocity.move_toward(Vector2.ZERO, Player.FRICTION * delta)
 	Player.move_and_slide()
 	AnimationHandler.update_animation_parameters(Player.velocity, input_vector)
+	if Input.is_action_just_pressed("Attack"):
+		get_parent().change_state("AttackState")
 
 func exit_state():
-	pass
+	Player = null
