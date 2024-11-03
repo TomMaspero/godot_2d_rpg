@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmdj3ky41c057"]
+
+[ext_resource type="Texture2D" uid="uid://clvnph5f2jys" path="res://Assets/Tilesets/Objects/Filth & Debris.png" id="1_o70df"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3frps"]
+atlas = ExtResource("1_o70df")
+region = Rect2(68, 67, 20, 20)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
+texture = SubResource("AtlasTexture_3frps")

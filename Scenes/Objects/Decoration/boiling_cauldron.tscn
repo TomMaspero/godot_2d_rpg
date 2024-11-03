@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://dqopsn68kc4cv"]
+
+[ext_resource type="Texture2D" uid="uid://baxlg5q10xagg" path="res://Assets/Tilesets/Objects/CauldronBoiling.png" id="1_ixj5n"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2a4ou"]
+atlas = ExtResource("1_ixj5n")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f17pd"]
+atlas = ExtResource("1_ixj5n")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s52ny"]
+atlas = ExtResource("1_ixj5n")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oxum6"]
+atlas = ExtResource("1_ixj5n")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x27ja"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2a4ou")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f17pd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s52ny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oxum6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lpk0s"]
+radius = 8.06226
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_x27ja")
+autoplay = "default"
+frame_progress = 0.876404
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_lpk0s")

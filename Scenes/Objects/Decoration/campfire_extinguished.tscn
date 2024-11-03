@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://elchpaw2bp46"]
+
+[ext_resource type="Texture2D" uid="uid://dacmbcjx8wd7x" path="res://Assets/Tilesets/decorations-medieval.png" id="1_3dq0f"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jtys"]
+atlas = ExtResource("1_3dq0f")
+region = Rect2(481, 1510, 31, 58)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_abxqh"]
+radius = 7.0
+height = 14.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -10)
+texture = SubResource("AtlasTexture_7jtys")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_abxqh")

@@ -1,0 +1,60 @@
+[gd_scene load_steps=9 format=3 uid="uid://yo5iupiggsfh"]
+
+[ext_resource type="Texture2D" uid="uid://u36ct6p2timy" path="res://Assets/Tilesets/Objects/CampFire.png" id="1_e3oq8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jvr3e"]
+atlas = ExtResource("1_e3oq8")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_foihm"]
+atlas = ExtResource("1_e3oq8")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yk0yk"]
+atlas = ExtResource("1_e3oq8")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kyvno"]
+atlas = ExtResource("1_e3oq8")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xrune"]
+atlas = ExtResource("1_e3oq8")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hrrpn"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jvr3e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_foihm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yk0yk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kyvno")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xrune")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_q8wwn"]
+radius = 8.06226
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -13)
+sprite_frames = SubResource("SpriteFrames_hrrpn")
+autoplay = "default"
+frame_progress = 0.476716
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_q8wwn")

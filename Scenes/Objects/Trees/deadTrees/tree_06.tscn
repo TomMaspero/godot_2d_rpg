@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://crfdfkmi6enj6"]
+
+[ext_resource type="Texture2D" uid="uid://c80rigp8wpk1e" path="res://Assets/Tilesets/Objects/trees-dead.png" id="1_gkdy8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixoql"]
+atlas = ExtResource("1_gkdy8")
+region = Rect2(62, 350, 71, 161)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_mt5r8"]
+radius = 4.0
+height = 16.0
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -51)
+texture = SubResource("AtlasTexture_ixoql")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CapsuleShape2D_mt5r8")
