@@ -1,0 +1,22 @@
+[gd_scene load_steps=6 format=3 uid="uid://cfsc5uhhgrqde"]
+
+[ext_resource type="Script" uid="uid://do5rchowfdu34" path="res://Scripts/Enemies/StateMachine.gd" id="1_3ghk1"]
+[ext_resource type="Script" uid="uid://kjxlrc86d52n" path="res://Scripts/Enemies/AttackState.gd" id="2_w7scf"]
+[ext_resource type="Script" uid="uid://c6itn835tiwt4" path="res://Scripts/Enemies/ChaseState.gd" id="3_pwsdr"]
+[ext_resource type="Script" uid="uid://b6qj312y4jbet" path="res://Scripts/Enemies/IdleState.gd" id="4_tygxx"]
+[ext_resource type="Script" uid="uid://br31kncxncsqv" path="res://Scripts/Enemies/WanderState.gd" id="5_i0hu1"]
+
+[node name="StateMachine" type="Node"]
+script = ExtResource("1_3ghk1")
+
+[node name="AttackState" type="Node" parent="."]
+script = ExtResource("2_w7scf")
+
+[node name="ChaseState" type="Node" parent="."]
+script = ExtResource("3_pwsdr")
+
+[node name="IdleState" type="Node" parent="."]
+script = ExtResource("4_tygxx")
+
+[node name="WanderState" type="Node" parent="."]
+script = ExtResource("5_i0hu1")

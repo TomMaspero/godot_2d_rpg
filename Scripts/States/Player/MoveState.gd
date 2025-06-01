@@ -1,15 +1,11 @@
-# MoveState.gd
 extends "res://Scripts/States/BaseState.gd"
 
 @onready var Player = get_parent().get_parent()
 @onready var AnimationHandler = Player.get_node("AnimationHandler")
 
 var input_vector = Vector2.ZERO
-
-func enter_state():
-	pass
 	
-func update(delta):
+func _physics_process(delta):
 	input_vector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized() 
@@ -21,6 +17,3 @@ func update(delta):
 	AnimationHandler.update_animation_parameters(Player.velocity, input_vector)
 	if Input.is_action_just_pressed("Attack"):
 		get_parent().change_state("AttackState")
-
-func exit_state():
-	Player = null
