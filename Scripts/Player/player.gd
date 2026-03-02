@@ -24,7 +24,8 @@ extends CharacterBody2D
 ##################################################################
 
 func _ready():
-	state_machine = $StateMachine
+	pass
 
 func _physics_process(delta):
-	state_machine.update(delta)
+	#state_machine.update(delta)
+	pass

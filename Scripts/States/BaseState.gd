@@ -1,11 +1,7 @@
-# BaseState.gd
 extends Node
 
 func enter_state():
-	pass
+	self.set_physics_process(true)
 
 func exit_state():
-	pass
-	
-func update(delta):
-	pass # called every frame while in this state
+	self.set_physics_process(false)

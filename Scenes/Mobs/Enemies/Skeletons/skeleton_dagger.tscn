@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://dv0nkshiur7lq"]
+
+[ext_resource type="Texture2D" uid="uid://car6qxl203bih" path="res://Assets/Sprites/Mobs/skeleton/skeleton_dagger.png" id="1_6305g"]
+[ext_resource type="Script" uid="uid://ob0cbkxuy482" path="res://Scripts/Enemies/Skeleton/skeleton_dagger.gd" id="1_wm5gm"]
+[ext_resource type="PackedScene" uid="uid://1nrd1g86pw1i" path="res://Scenes/Characters/stats.tscn" id="2_t6cfa"]
+[ext_resource type="PackedScene" uid="uid://cfsc5uhhgrqde" path="res://Scenes/Mobs/Enemies/enemy_state_machine.tscn" id="3_1xcj2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oa2tj"]
+height = 34.0
+
+[node name="Skeleton_dagger" type="CharacterBody2D"]
+script = ExtResource("1_wm5gm")
+
+[node name="Stats" parent="." instance=ExtResource("2_t6cfa")]
+max_health = 2
+
+[node name="StateMachine" parent="." instance=ExtResource("3_1xcj2")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
+texture = ExtResource("1_6305g")
+hframes = 13
+vframes = 46
+frame = 130
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_oa2tj")
